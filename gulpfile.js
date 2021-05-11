@@ -3,13 +3,11 @@ var browserSync = require('browser-sync');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
-var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var imageminPngquant = require("imagemin-pngquant");
 var imageminMozjpeg = require("imagemin-mozjpeg");
 var sass = require('gulp-sass');
-var sass         = require('gulp-sass');
-var postcss      = require('gulp-postcss');
+var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 
 gulp.task('browser-sync', function() {

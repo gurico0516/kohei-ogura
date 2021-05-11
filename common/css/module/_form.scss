@@ -1,0 +1,38 @@
+.form-sample {
+  width: 100%;
+  text-align: left;
+}
+.form-label {
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: left;
+  color: #fff;
+}
+.form-input + .form-label {
+  margin-top: 1.3rem;
+}
+.form-input {
+  margin-top: 0.4rem;
+}
+.form-simple input,
+.form-simple textarea {
+  width: 100%;
+  resize: none;
+  padding: 1em;
+  border: 2px solid #fff;
+  font-family: sans-serif;
+}
+.form-simple input[type="submit"],
+.form-simple button[type="submit"] {
+  margin-top: 3em;
+  border: solid 2px #fff;
+}
+.form-input::placeholder {
+  color: #999;
+}
+.form-btn-holder {
+  text-align: center;
+}
+.form-btn-holder .btn {
+  background-color: #fff;
+}
