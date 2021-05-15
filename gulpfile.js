@@ -68,19 +68,11 @@ gulp.task( 'imagemin', function() {
 
 
 gulp.task('sass', function() {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('./common/css/**/*.scss', gulp.task('sass'))
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(gulp.dest('./css'));
 });
 
 gulp.task( 'watch', function() {
-  gulp.watch( './sass/**/*.scss', gulp.task( 'sass' ) );
-});
-
-
-gulp.task('sass', function() {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest('./css'));
+  gulp.watch( './common/css/**/*.scss', gulp.task( 'sass' ) );
 });
